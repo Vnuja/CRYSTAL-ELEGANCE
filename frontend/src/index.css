@@ -1,0 +1,115 @@
+/* External CSS file (e.g., styles.css) */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* New hover animation for gem cards */
+@keyframes cardHover {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* New hover animation for gem images */
+@keyframes imageHover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* New fadeIn animation for image bar */
+@keyframes fadeInImageBar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Class for gem card hover */
+.gem-card:hover {
+  animation: cardHover 0.3s forwards; /* Apply the card hover animation */
+}
+
+/* Class for gem image hover */
+.gem-image:hover {
+  animation: imageHover 0.3s forwards; /* Apply the image hover animation */
+}
+
+/* New class for fading in image bar */
+.image-bar-image {
+  animation: fadeInImageBar 1s forwards; /* Apply fadeIn animation */
+}
+
+/* Additional styles */
+.gem-card {
+  transition: transform 0.2s; /* Smooth transition for scaling */
+}
+
+/* Optional styles for card layout */
+.gem-image {
+  transition: transform 0.2s; /* Smooth transition for image scaling */
+}
+
+/* Add any other styles as needed */
